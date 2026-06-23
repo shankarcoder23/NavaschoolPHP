@@ -38,14 +38,7 @@ toggleBtn.addEventListener("click", () => {
 
  
 
- /* Notice */  
 
-const today = new Date();
-
-document.getElementById("currentDate").innerHTML =
-today.getFullYear() + "-" +
-String(today.getMonth()+1).padStart(2,'0') + "-" +
-String(today.getDate()).padStart(2,'0');
 
 
   

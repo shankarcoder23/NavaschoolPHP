@@ -271,105 +271,223 @@
 
 </section>
 
-<!-- Notice Board Section -->
+
+<!-- Notice Section -->
 <section class="notice-section py-5">
     <div class="container">
 
-        <div class="text-center mb-5">
-            <span class="notice-subtitle">LATEST UPDATES</span>
-            <h2 class="section-title">School Announcements</h2>
-            <p class="text-muted">
-                Stay informed about admissions, events, examinations and school activities.
-            </p>
-        </div>
+        <div class="row g-4">
 
-        <div class="notice-timeline">
+            <!-- Notice Board -->
+            <div class="col-lg-8">
+                <div class="notice-board">
 
-            <!-- Notice -->
-            <div class="notice-box">
-                <div class="notice-icon">
-                    <i class="bi bi-mortarboard-fill"></i>
-                </div>
+                    <div class="section-title">
+                        <h2>
+                            <i class="fas fa-bullhorn me-2"></i>
+                            Notice Board
+                        </h2>
+                    </div>
 
-                <div class="notice-content">
-                    <span class="notice-category">Admission</span>
-                    <h5>Admission Open For Session 2026-27</h5>
-                    <p>
-                        Applications are invited for Nursery to Class X.
-                        Last date of submission is 15 August 2026.
-                    </p>
-                </div>
+                    <div class="notice-scroll-area">
 
-                <div class="notice-action">
-                    <span class="notice-date">20 Jun 2026</span>
-                    <a href="#" class="btn-view">Apply Now</a>
+                        <div class="notice-list" id="noticeList">
+
+                            <!-- Notice Card -->
+                            <div class="notice-card">
+                                <div class="notice-date">
+                                    <i class="fas fa-calendar-day"></i>
+                                    23 Jun 2026
+                                </div>
+                                <h5>Summer Vacation Notice</h5>
+                                <p>
+                                    Summer vacation will begin from 1st July
+                                    and classes will resume on 15th July.
+                                </p>
+                            </div>
+
+                            <div class="notice-card">
+                                <div class="notice-date">
+                                    <i class="fas fa-calendar-day"></i>
+                                    21 Jun 2026
+                                </div>
+                                <h5>Parent Teacher Meeting</h5>
+                                <p>
+                                    PTM will be conducted on 28th June from
+                                    10:00 AM to 1:00 PM.
+                                </p>
+                            </div>
+
+                            <div class="notice-card">
+                                <div class="notice-date">
+                                    <i class="fas fa-calendar-day"></i>
+                                    18 Jun 2026
+                                </div>
+                                <h5>Admission Open</h5>
+                                <p>
+                                    Admission process for Session 2026-27 has
+                                    started. Contact school office.
+                                </p>
+                            </div>
+
+                            <div class="notice-card">
+                                <div class="notice-date">
+                                    <i class="fas fa-calendar-day"></i>
+                                    15 Jun 2026
+                                </div>
+                                <h5>Science Exhibition</h5>
+                                <p>
+                                    Registration for Annual Science Exhibition
+                                    starts from next Monday.
+                                </p>
+                            </div>
+
+                            <div class="notice-card">
+                                <div class="notice-date">
+                                    <i class="fas fa-calendar-day"></i>
+                                    12 Jun 2026
+                                </div>
+                                <h5>Unit Test Schedule</h5>
+                                <p>
+                                    Unit Test for Classes IX and X will start
+                                    from 5th July.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Notice -->
-            <div class="notice-box">
-                <div class="notice-icon event">
-                    <i class="bi bi-calendar-event-fill"></i>
+            <!-- Calendar -->
+            <div class="col-lg-4">
+
+                <div class="calendar-box">
+
+                    <div class="section-title">
+                        <h2>
+                            <i class="fas fa-calendar-alt me-2"></i>
+                            School Calendar
+                        </h2>
+                    </div>
+
+                    <div class="calendar-body">
+
+                        <iframe
+                            src="https://calendar.google.com/calendar/embed?src=en.indian%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKolkata"
+                            width="100%"
+                            height="450"
+                            frameborder="0"
+                            scrolling="no">
+                        </iframe>
+
+                    </div>
+
                 </div>
 
-                <div class="notice-content">
-                    <span class="notice-category">Event</span>
-                    <h5>Annual Cultural Programme Registration</h5>
-                    <p>
-                        Students can participate in dance, music, drama and art competitions.
-                    </p>
-                </div>
-
-                <div class="notice-action">
-                    <span class="notice-date">05 Jul 2026</span>
-                    <a href="#" class="btn-view">Details</a>
-                </div>
-            </div>
-
-            <!-- Notice -->
-            <div class="notice-box">
-                <div class="notice-icon exam">
-                    <i class="bi bi-journal-check"></i>
-                </div>
-
-                <div class="notice-content">
-                    <span class="notice-category">Examination</span>
-                    <h5>Half-Yearly Examination Schedule Released</h5>
-                    <p>
-                        Download the examination routine from the school portal.
-                    </p>
-                </div>
-
-                <div class="notice-action">
-                    <span class="notice-date">15 Jul 2026</span>
-                    <a href="#" class="btn-view">Download</a>
-                </div>
-            </div>
-
-            <!-- Notice -->
-            <div class="notice-box">
-                <div class="notice-icon scholarship">
-                    <i class="bi bi-award-fill"></i>
-                </div>
-
-                <div class="notice-content">
-                    <span class="notice-category">Scholarship</span>
-                    <h5>Merit Scholarship Test Registration Open</h5>
-                    <p>
-                        Eligible students can register online before 30 July 2026.
-                    </p>
-                </div>
-
-                <div class="notice-action">
-                    <span class="notice-date">20 Jul 2026</span>
-                    <a href="#" class="btn-view">Register</a>
-                </div>
             </div>
 
         </div>
 
     </div>
 </section>
+
+<!-- Contact Section -->
+<section class="contact-section py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="contact-badge">Get In Touch</span>
+            <h2 class="contact-title">Contact Us</h2>
+            <p class="contact-subtitle">
+                We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Contact Form -->
+            <div class="col-lg-6">
+
+                <div class="contact-form-card">
+
+                    <h3 class="form-heading">
+                        <i class="fas fa-paper-plane me-2"></i>
+                        Send Message
+                    </h3>
+
+                    <form action="" method="post">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <input type="text"
+                                       class="form-control custom-input"
+                                       placeholder="Your Name">
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="email"
+                                       class="form-control custom-input"
+                                       placeholder="Email Address">
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="tel"
+                                       class="form-control custom-input"
+                                       placeholder="Phone Number">
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="text"
+                                       class="form-control custom-input"
+                                       placeholder="Subject">
+                            </div>
+
+                            <div class="col-12">
+                                <textarea class="form-control custom-input-msg"
+                                          rows="5"
+                                          placeholder="Write Your Message"></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="send-btn">
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    Send Message
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- Google Map -->
+            <div class="col-lg-6">
+
+                <div class="map-card">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28653.58998787841!2d91.7362!3d26.1445"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
 
 
 <?php include 'assets/include/Footer.php' ?>

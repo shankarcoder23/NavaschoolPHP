@@ -330,149 +330,6 @@ body{
 
 
 
-.notice-section{
-    background:#f8fafc;
-}
-
-.notice-subtitle{
-    display:inline-block;
-    color:#120530;
-    font-weight:600;
-    letter-spacing:1px;
-    margin-bottom:10px;
-}
-
-.section-title{
-    font-size:2.5rem;
-    font-weight:700;
-    margin-bottom:15px;
-}
-
-.notice-timeline{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
-.notice-box{
-    background:#fff;
-    border-radius:20px;
-    padding:25px;
-    display:flex;
-    align-items:center;
-    gap:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.05);
-    transition:.3s;
-    border-left:5px solid #1e036d;
-}
-
-.notice-box:hover{
-    transform:translateY(-5px);
-    box-shadow:0 20px 40px rgba(22, 9, 53, 0.596);
-}
-
-.notice-icon{
-    width:70px;
-    height:70px;
-    min-width:70px;
-    border-radius:18px;
-    background:#e0e7ff;
-    color:#2563eb;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:28px;
-}
-
-.notice-icon.event{
-    background:#fff7ed;
-    color:#f97316;
-}
-
-.notice-icon.exam{
-    background:#fef2f2;
-    color:#ef4444;
-}
-
-.notice-icon.scholarship{
-    background:#f3e8ff;
-    color:#9333ea;
-}
-
-.notice-content{
-    flex:1;
-}
-
-.notice-category{
-    display:inline-block;
-    background:#eff6ff;
-    color:#2563eb;
-    padding:4px 12px;
-    border-radius:30px;
-    font-size:.8rem;
-    font-weight:600;
-    margin-bottom:10px;
-}
-
-.notice-content h5{
-    font-weight:700;
-    margin-bottom:10px;
-}
-
-.notice-content p{
-    margin-bottom:0;
-    color:#64748b;
-}
-
-.notice-action{
-    text-align:right;
-}
-
-.notice-date{
-    display:block;
-    font-size:.85rem;
-    color:#64748b;
-    margin-bottom:12px;
-}
-
-.btn-view{
-    display:inline-block;
-    background:#180846;
-    color:#fff;
-    padding:10px 22px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:600;
-}
-
-.btn-view:hover{
-    color:#fff;
-    background:#a1860b;
-}
-
-/* Mobile */
-@media(max-width:768px){
-
-    .notice-box{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
-    .notice-action{
-        width:100%;
-        text-align:left;
-    }
-
-    .btn-view{
-        width:100%;
-        text-align:center;
-    }
-
-    .section-title{
-        font-size:2rem;
-    }
-}
-
 /* Mobile general adjustments */
 @media(max-width:768px){
 
@@ -944,4 +801,347 @@ body{
 
 .social-menu a:hover{
     transform: translateY(-5px);
+}
+
+/* Notice Board CSS */
+.notice-section{
+    background:linear-gradient(135deg,#eef4ff,#f8faff);
+}
+
+/* Main Cards */
+.notice-board,
+.calendar-box{
+    border:none;
+    border-radius:24px;
+    overflow:hidden;
+    height:100%;
+    background:#fff;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.notice-board:hover,
+.calendar-box:hover{
+    transform:translateY(-4px);
+}
+
+/* Notice Header */
+.notice-board .section-title{
+    background:linear-gradient(135deg,#160d3d,#201753);
+    color:#fff;
+    padding:20px 25px;
+    position:relative;
+}
+
+.notice-board .section-title::after{
+    content:"";
+    position:absolute;
+    top:-30px;
+    right:-30px;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+}
+
+/* Calendar Header */
+.calendar-box .section-title{
+    background:linear-gradient(135deg,#1b0c36,#c0b953);
+    color:#fff;
+    padding:20px 25px;
+    position:relative;
+}
+
+.calendar-box .section-title::after{
+    content:"";
+    position:absolute;
+    top:-30px;
+    right:-30px;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+}
+
+.section-title h2{
+    margin:0;
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:.3px;
+}
+
+/* Notice Area */
+.notice-scroll-area{
+    height:500px;
+    overflow:hidden;
+    padding:20px;
+    background:#f8fbff;
+}
+
+/* Notice Cards */
+.notice-card{
+    background:#fff;
+    border:none;
+    border-radius:18px;
+    padding:18px;
+    margin-bottom:15px;
+    box-shadow:0 8px 20px rgba(37,99,235,.08);
+    transition:.35s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.notice-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:6px;
+    height:100%;
+    background:linear-gradient(#2563eb,#60a5fa);
+}
+
+.notice-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(179, 166, 226, 0.966);
+}
+
+/* Date Badge */
+.notice-date{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:linear-gradient(135deg,#270d6e,#f1f1ef);
+    color:#fff;
+    padding:7px 14px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:12px;
+}
+
+.notice-card h5{
+    font-size:18px;
+    font-weight:700;
+    color:#1e293b;
+    margin-bottom:8px;
+}
+
+.notice-card p{
+    color:#64748b;
+    margin:0;
+    line-height:1.7;
+    font-size:15px;
+}
+
+/* Calendar Area */
+.calendar-body{
+    padding:15px;
+    background:#faf7ff;
+}
+
+.calendar-body iframe{
+    border-radius:16px;
+    overflow:hidden;
+}
+
+/* Decorative Glow */
+.notice-board{
+    position:relative;
+}
+
+.notice-board::before{
+    content:"";
+    position:absolute;
+    width:200px;
+    height:200px;
+    background:rgba(37,99,235,.08);
+    border-radius:50%;
+    top:-100px;
+    left:-100px;
+}
+
+.calendar-box{
+    position:relative;
+}
+
+.calendar-box::before{
+    content:"";
+    position:absolute;
+    width:200px;
+    height:200px;
+    background:rgba(58, 46, 90, 0.24);
+    border-radius:50%;
+    top:-100px;
+    left:-100px;
+}
+
+/* Mobile */
+@media(max-width:991px){
+
+    .notice-scroll-area{
+        height:400px;
+    }
+
+    .calendar-box{
+        margin-top:20px;
+    }
+}
+
+@media(max-width:768px){
+
+    .section-title{
+        padding:16px 18px;
+    }
+
+    .section-title h2{
+        font-size:18px;
+    }
+
+    .notice-card{
+        padding:15px;
+    }
+
+    .notice-card h5{
+        font-size:16px;
+    }
+
+    .notice-card p{
+        font-size:14px;
+    }
+}
+
+/* Contact section */
+.contact-section{
+    background:linear-gradient(135deg,#eef4ff,#f9fbff);
+}
+
+/* Section Title */
+.contact-badge{
+    display:inline-block;
+    padding:8px 18px;
+    background:#e0ebff;
+    color:#2563eb;
+    border-radius:50px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.contact-title{
+    font-size:42px;
+    font-weight:700;
+    color:#1e293b;
+}
+
+.contact-subtitle{
+    max-width:650px;
+    margin:auto;
+    color:#64748b;
+}
+
+/* Contact Form Card */
+.contact-form-card{
+    background:linear-gradient(135deg,#1e0f41,#4f46e5);
+    padding:35px;
+    border-radius:24px;
+    box-shadow:0 20px 40px rgba(37,99,235,.18);
+    height:100%;
+    position:relative;
+    overflow:hidden;
+}
+
+.contact-form-card::before{
+    content:'';
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:rgba(255,255,255,.08);
+    border-radius:50%;
+    top:-120px;
+    right:-120px;
+}
+
+.form-heading{
+    color:#fff;
+    margin-bottom:25px;
+    font-size:28px;
+    font-weight:700;
+}
+
+/* Inputs */
+.custom-input{
+    border:none;
+    border-radius:12px;
+    padding:14px 16px;
+    font-size:15px;
+    background:#fff;
+    box-shadow:none !important;
+}
+
+.custom-input:focus{
+    border:none;
+    box-shadow:0 0 0 4px rgba(255,255,255,.25) !important;
+}
+
+/* Button */
+.send-btn{
+    width:100%;
+    border:none;
+    background:#130631;
+    color:#f8faff;
+    padding:14px;
+    border-radius:12px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.send-btn:hover{
+    transform:translateY(-3px);
+    background:#83732c;
+}
+
+/* Map */
+.map-card{
+    height:100%;
+    overflow:hidden;
+    border-radius:24px;
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+.map-card iframe{
+    width:100%;
+    height:100%;
+    min-height:550px;
+    border:0;
+}
+
+/* Responsive */
+@media(max-width:991px){
+
+    .contact-title{
+        font-size:32px;
+    }
+
+    .map-card iframe{
+        min-height:400px;
+    }
+}
+
+@media(max-width:576px){
+
+    .contact-form-card{
+        padding:25px;
+    }
+
+    .contact-title{
+        font-size:28px;
+    }
+
+    .form-heading{
+        font-size:22px;
+    }
+
+    .custom-input{
+        padding:12px 14px;
+    }
 }

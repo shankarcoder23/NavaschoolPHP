@@ -13,6 +13,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -21,8 +22,11 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 <link rel="stylesheet" href="assets/css/index.css">
 <link rel="stylesheet" href="assets/css/about.css">
 <link rel="stylesheet" href="assets/css/contact.css">
-<link rel="stylesheet" href="assets/css/noticeboard.css">
+<link rel="stylesheet" href="assets/css/notice.css">
 <link rel="stylesheet" href="assets/css/faculty.css">
+<link rel="stylesheet" href="assets/css/founder.css">
+<link rel="stylesheet" href="assets/css/principalmsg.css">
+<link rel="stylesheet" href="assets/css/parentsmeet.css">
 </head>
 
 <body>
@@ -113,10 +117,9 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Rector's Message</a></li>
-                        <li><a class="dropdown-item" href="#">Principal's Message</a></li>
+                        <li><a class="dropdown-item" href="founder.php">Founder's</a></li>
+                        <li><a class="dropdown-item" href="principalmsg.php">Principal's Message</a></li>
                         <li><a class="dropdown-item" href="faculty.php">Our Faculty</a></li>
-                        <li><a class="dropdown-item" href="#">Governing Body</a></li>
                     </ul>
                 </li>
 
@@ -130,12 +133,12 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Sports</a></li>
                         <li><a class="dropdown-item" href="#">Occasions</a></li>
-                        <li><a class="dropdown-item" href="#">Parent Teacher Meet</a></li>
+                        <li><a class="dropdown-item" href="parentsmeet.php">Parent Teacher Meet</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="noticeboard.html">Notice Board</a>
+                    <a class="nav-link" href="noticeboard.php">Notice Board</a>
                 </li>
 
                 <li class="nav-item">
@@ -147,3 +150,4 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
         </div>
     </div>
 </nav>
+
