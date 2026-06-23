@@ -1,0 +1,216 @@
+/* ==========================
+   Faculty Hero Section
+========================== */
+
+.faculty-hero{
+    position:relative;
+    width:100%;
+    height:320px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+}
+
+.hero-image{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(8,20,45,0.60);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+}
+
+.hero-badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.15);
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:15px;
+    backdrop-filter:blur(5px);
+}
+
+.hero-content h1{
+    color:#fff;
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.hero-content p{
+    color:#f8f9fa;
+    font-size:17px;
+    margin-bottom:0;
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width:991px){
+
+    .faculty-hero{
+        height:260px;
+    }
+
+    .hero-content h1{
+        font-size:2.4rem;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width:768px){
+
+    .faculty-hero{
+        height:200px; /* Normal height */
+    }
+
+    .hero-badge{
+        font-size:12px;
+        padding:6px 14px;
+        margin-bottom:10px;
+    }
+
+    .hero-content h1{
+        font-size:1.9rem;
+        margin-bottom:8px;
+    }
+
+    .hero-content p{
+        font-size:13px;
+        padding:0 15px;
+        line-height:1.5;
+    }
+}
+
+
+
+/* ===============================
+   Faculty Section
+================================== */
+
+.faculty-section{
+    background:#f8fafc;
+}
+
+.section-subtitle{
+    color:#6c2bd9;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.section-title{
+    font-size:2.5rem;
+    font-weight:700;
+    color:#0f172a;
+}
+
+.faculty-card{
+    max-width:306px;
+    margin:auto;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.faculty-image img{
+    width:306px;
+    height:218px;
+    object-fit:cover;
+    display:block;
+}
+.faculty-card:hover .faculty-image img{
+    transform:scale(1.05);
+}
+
+.faculty-content{
+    padding:25px;
+    text-align:center;
+}
+
+.faculty-content h5{
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.faculty-content span{
+    color:#6c2bd9;
+    font-weight:600;
+}
+
+.faculty-content p{
+    margin-top:15px;
+    color:#64748b;
+    font-size:14px;
+}
+
+.faculty-social{
+    margin-top:20px;
+}
+
+.faculty-social a{
+    width:38px;
+    height:38px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#f1f5f9;
+    color:#6c2bd9;
+    margin:0 4px;
+    transition:.3s;
+}
+
+.faculty-social a:hover{
+    background:#6c2bd9;
+    color:#fff;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .faculty-hero{
+        padding:80px 0;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+   .faculty-image img{
+        height:200px;
+    }
+}
