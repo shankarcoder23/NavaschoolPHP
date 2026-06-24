@@ -24,13 +24,13 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
 <link rel="stylesheet" href="assets/css/index.css">
 <link rel="stylesheet" href="assets/css/about.css">
-<link rel="stylesheet" href="assets/css/contact.css">
 <link rel="stylesheet" href="assets/css/faculty.css">
 <link rel="stylesheet" href="assets/css/founder.css">
 <link rel="stylesheet" href="assets/css/principalmsg.css">
 <link rel="stylesheet" href="assets/css/parentsmeet.css">
 <link rel="stylesheet" href="assets/css/rules.css">
 <link rel="stylesheet" href="assets/css/noticeboard.css">
+<link rel="stylesheet" href="assets/css/contact.css">
 </head>
 
 <body>
@@ -164,7 +164,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                 
 
                  <li class="nav-item">
-                    <a class="nav-link active" href="contactus.html">Contact Us</a>
+                    <a class="nav-link active" href="contact.php">Contact Us</a>
                 </li>
 
             </ul>
