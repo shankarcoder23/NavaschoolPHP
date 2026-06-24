@@ -1,38 +1,31 @@
 <?php include 'assets/include/Header.php' ?>
 
-<!-- Hero Section -->
+<!-- HERO SECTION -->
 <section class="hero-section">
 
     <div id="schoolSlider"
          class="carousel slide carousel-fade"
-         data-bs-ride="carousel">
+         data-bs-ride="carousel"
+         data-bs-interval="5000">
 
         <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button type="button"
-                    data-bs-target="#schoolSlider"
-                    data-bs-slide-to="0"
-                    class="active"></button>
-
-            <button type="button"
-                    data-bs-target="#schoolSlider"
-                    data-bs-slide-to="1"></button>
-
-            <button type="button"
-                    data-bs-target="#schoolSlider"
-                    data-bs-slide-to="2"></button>
+        <div class="carousel-indicators custom-indicators">
+            <button type="button" data-bs-target="#schoolSlider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#schoolSlider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#schoolSlider" data-bs-slide-to="2"></button>
         </div>
 
         <div class="carousel-inner">
 
             <!-- Slide 1 -->
             <div class="carousel-item active">
-                <img src="assets/image/1.jpg" class="d-block w-100" alt="School">
+                <img src="assets/image/1.jpg" alt="School Campus">
 
-                <div class="overlay"></div>
+                <div class="hero-overlay"></div>
 
-               <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
-                    <div class="hero-content">
+                <div class="carousel-caption">
+                    <div class="hero-card hero-card-first">
+
                         <span class="hero-badge">
                             Admissions Open 2026-27
                         </span>
@@ -42,31 +35,33 @@
                         </h1>
 
                         <p>
-                            Empowering students with knowledge,
-                            creativity and strong values.
+                            Empowering students with knowledge, creativity,
+                            innovation and strong values for a brighter future.
                         </p>
 
-                        <div class="hero-buttons">
-                            <a href="#" class="btn btn-primary-custom">
+                        <div class="hero-btn-group">
+                            <a href="#" class="hero-btn primary-btn">
                                 Apply Now
                             </a>
 
-                            <a href="#" class="btn btn-outline-custom">
+                            <a href="#" class="hero-btn secondary-btn">
                                 Explore Campus
                             </a>
                         </div>
+
                     </div>
                 </div>
             </div>
 
             <!-- Slide 2 -->
             <div class="carousel-item">
-                <img src="assets/image/2.jpg" class="d-block w-100" alt="Students">
+                <img src="assets/image/2.jpg" alt="Students">
 
-                <div class="overlay"></div>
+                <div class="hero-overlay"></div>
 
-                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
-                    <div class="hero-content">
+                <div class="carousel-caption">
+                    <div class="hero-card">
+
                         <span class="hero-badge">
                             Learn • Lead • Inspire
                         </span>
@@ -77,20 +72,22 @@
 
                         <p>
                             Creating confident learners and responsible
-                            citizens for tomorrow.
+                            citizens prepared for tomorrow.
                         </p>
+
                     </div>
                 </div>
             </div>
 
             <!-- Slide 3 -->
             <div class="carousel-item">
-                <img src="assets/image/3.jpg" class="d-block w-100" alt="Campus">
+                <img src="assets/image/3.jpg" alt="Campus">
 
-                <div class="overlay"></div>
+                <div class="hero-overlay"></div>
 
-               <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
-                    <div class="hero-content">
+                <div class="carousel-caption">
+                    <div class="hero-card">
+
                         <span class="hero-badge">
                             Modern Learning Environment
                         </span>
@@ -101,8 +98,9 @@
 
                         <p>
                             Smart classrooms, innovation and holistic
-                            development.
+                            development for every child.
                         </p>
+
                     </div>
                 </div>
             </div>
@@ -111,17 +109,25 @@
 
         <!-- Controls -->
         <button class="carousel-control-prev"
-                type="button"
-                data-bs-target="#schoolSlider"
-                data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
+            type="button"
+            data-bs-target="#schoolSlider"
+            data-bs-slide="prev">
+
+            <span class="slider-arrow">
+                <i class="bi bi-chevron-left"></i>
+            </span>
+
         </button>
 
         <button class="carousel-control-next"
-                type="button"
-                data-bs-target="#schoolSlider"
-                data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
+            type="button"
+            data-bs-target="#schoolSlider"
+            data-bs-slide="next">
+
+            <span class="slider-arrow">
+                <i class="bi bi-chevron-right"></i>
+            </span>
+
         </button>
 
     </div>

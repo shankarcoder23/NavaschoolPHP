@@ -1,0 +1,144 @@
+/* ==========================
+   RULES & REGULATIONS
+========================== */
+
+.rules-section{
+    background:#f5f7fc;
+    padding:90px 0;
+}
+
+.section-title .subtitle{
+    display:inline-block;
+    background:#0d6efd15;
+    color:#0d6efd;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.section-title h2{
+    font-size:42px;
+    font-weight:700;
+    color:#1b1b3f;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    font-size:16px;
+}
+
+.rule-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    height:100%;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    position:relative;
+    overflow:hidden;
+}
+
+.rule-card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(90deg,#0d6efd,#00c6ff);
+}
+
+.rule-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.rule-icon{
+    width:80px;
+    height:80px;
+    background:linear-gradient(135deg,#eef09a,#170344);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 20px;
+}
+
+.rule-icon i{
+    color:#fff;
+    font-size:30px;
+}
+
+.rule-card h5{
+    font-size:22px;
+    font-weight:700;
+    color:#1b1b3f;
+    margin-bottom:15px;
+}
+
+.rule-card p{
+    color:#666;
+    line-height:1.8;
+    margin:0;
+}
+
+.important-box{
+    background:linear-gradient(135deg,#9dc1f0,#1b1b3f);
+    color:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(13,110,253,.25);
+}
+
+.important-box h4{
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.important-box i{
+    margin-right:8px;
+}
+
+.important-box p{
+    margin:0;
+    line-height:1.8;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    .rules-section{
+        padding:60px 0;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .rule-card{
+        padding:25px;
+    }
+
+    .rule-icon{
+        width:70px;
+        height:70px;
+    }
+
+    .rule-icon i{
+        font-size:26px;
+    }
+
+    .important-box{
+        padding:25px;
+    }
+}

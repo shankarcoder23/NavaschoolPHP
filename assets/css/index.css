@@ -13,27 +13,75 @@ body{
     padding:10px 0;
 }
 
+/* Hambergur Menu */
 .custom-toggler{
     border:none;
     width:50px;
     height:50px;
-    background:rgba(13, 6, 32, 0.959);
-    border:1px solid rgba(255,255,255,.2);
-    border-radius:10px;
+    background:rgba(13, 6, 32, 0.96);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:12px;
     backdrop-filter:blur(12px);
+
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    gap:5px;
+
+    position:relative;
+    cursor:pointer;
+
+    box-shadow:none !important;
+}
+
+.custom-toggler:focus{
+    box-shadow:none !important;
 }
 
 .custom-toggler span{
+    position:absolute;
     width:24px;
     height:2.8px;
-    background:#fdfdff;
+    background:#fff;
     border-radius:20px;
+    transition:all .35s ease;
 }
+
+.custom-toggler span:nth-child(1){
+    transform:translateY(-7px);
+}
+
+.custom-toggler span:nth-child(2){
+    transform:translateY(0);
+}
+
+.custom-toggler span:nth-child(3){
+    transform:translateY(7px);
+}
+
+/* Hamburger -> X Animation */
+
+.custom-toggler.active span:nth-child(1){
+    transform:rotate(45deg);
+}
+
+.custom-toggler.active span:nth-child(2){
+    opacity:0;
+}
+
+.custom-toggler.active span:nth-child(3){
+    transform:rotate(-45deg);
+}
+.custom-toggler:hover{
+    transform:scale(1.05);
+    transition:.3s;
+    background:#998f35;
+}
+
+
+
+
+
 
 .school-logo{
     border-radius: 50%;
@@ -78,114 +126,235 @@ body{
     color:#0e0625;
 }
 
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero-section{
     position:relative;
+    overflow:hidden;
 }
 
 .hero-section .carousel-item{
-    height:100vh;
-    min-height:650px;
+    position:relative;
 }
 
 .hero-section .carousel-item img{
-    height:100%;
     width:100%;
+    height:700px;
     object-fit:cover;
-    animation:zoomEffect 10s linear infinite;
+    animation:zoomHero 8s ease-in-out infinite alternate;
 }
 
-.overlay{
+/* Overlay */
+
+.hero-overlay{
     position:absolute;
     inset:0;
     background:linear-gradient(
-        rgba(0,0,0,.55),
-        rgba(0,0,0,.45)
+        90deg,
+        rgba(0,0,0,0.75) 0%,
+        rgba(0,0,0,0.55) 40%,
+        rgba(0,0,0,0.25) 100%
     );
 }
 
+/* Caption */
+
 .carousel-caption{
-    bottom:50%;
-    transform:translateY(50%);
+    top:50%;
+    left:8%;
+    right:auto;
+    bottom:auto;
+    transform:translateY(-50%);
     text-align:left;
+    max-width:700px;
 }
 
-.hero-content{
-    max-width:700px;
-    padding:40px;
+/* Glass Card */
+
+.hero-card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.15);
     border-radius:24px;
-    backdrop-filter:blur(12px);
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.15);
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
 }
+
+/* Badge */
 
 .hero-badge{
     display:inline-block;
+    background:#ffc107;
+    color:#111;
+    font-weight:600;
     padding:8px 18px;
     border-radius:50px;
-    background:#ffb703;
-    color:#000;
-    font-weight:600;
+    font-size:14px;
     margin-bottom:20px;
 }
 
-.hero-content h1{
-    font-size:4rem;
+/* Heading */
+
+.hero-card h1{
+    color:#fff;
+    font-size:60px;
     font-weight:800;
-    line-height:1.2;
+    line-height:1.15;
     margin-bottom:20px;
 }
 
-.hero-content p{
-    font-size:1.15rem;
+.hero-card p{
+    color:#f1f1f1;
+    font-size:18px;
+    line-height:1.8;
     margin-bottom:30px;
 }
 
-.hero-buttons{
+/* Buttons */
+
+.hero-btn-group{
     display:flex;
     gap:15px;
     flex-wrap:wrap;
 }
 
-.btn-primary-custom{
-    background:#130b35;
-    color:#fff;
-    padding:12px 30px;
+.hero-btn{
+    text-decoration:none;
+    padding:14px 28px;
     border-radius:50px;
     font-weight:600;
+    transition:.4s;
 }
 
-.btn-primary-custom:hover{
-    background:#e9b952;
-    color:#fff;
+.primary-btn{
+    background:#ffc107;
+    color:#111;
 }
 
-.btn-outline-custom{
+.primary-btn:hover{
+    background:#fff;
+    transform:translateY(-3px);
+}
+
+.secondary-btn{
     border:2px solid #fff;
     color:#fff;
-    padding:12px 30px;
-    border-radius:50px;
-    font-weight:600;
 }
 
-.btn-outline-custom:hover{
+.secondary-btn:hover{
     background:#fff;
-    color:#000;
+    color:#111;
 }
 
-.carousel-indicators{
-    bottom:-10px;
+/* Slider Controls */
+
+.slider-arrow{
+    width:55px;
+    height:55px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(8px);
+    border-radius:50%;
+    font-size:24px;
+    color:#fff;
 }
 
-.carousel-indicators button{
+/* Indicators */
+
+.custom-indicators{
+    margin-bottom:35px;
+}
+
+.custom-indicators button{
     width:12px !important;
     height:12px !important;
     border-radius:50%;
-    margin:0 6px;
+    margin:0 5px !important;
 }
 
-/*== About us== */
-.about-section{
-    background:#fcfcffe8;
+.custom-indicators .active{
+    transform:scale(1.4);
+}
+
+/* Image Zoom Effect */
+
+@keyframes zoomHero{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.08);
+    }
+}
+@media (max-width:768px){
+
+    .hero-section .carousel-item img{
+        height:200px;
+    }
+
+    .carousel-caption{
+        left:15px;
+        right:15px;
+        top:50%;
+        transform:translateY(-50%);
+    }
+
+    .hero-card{
+        padding:15px;
+        border-radius:16px;
+    }
+     .hero-card-first{
+        min-height: auto;
+        padding: 15px;
+    }
+
+    .hero-badge{
+        font-size:10px;
+        padding:4px 10px;
+        margin-bottom:8px;
+    }
+
+    .hero-card h1{
+        font-size:18px;
+        margin-bottom:6px;
+        line-height:1.3;
+    }
+
+    .hero-card p{
+        font-size:11px;
+        line-height:1.4;
+        margin-bottom:10px;
+    }
+
+    .hero-btn-group{
+        gap:8px;
+    }
+
+    .hero-btn{
+        padding:7px 14px;
+        font-size:11px;
+    }
+
+    .slider-arrow{
+        width:35px;
+        height:35px;
+        font-size:16px;
+    }
+
+    .custom-indicators{
+        margin-bottom:5px;
+    }
+
+    .custom-indicators button{
+        width:8px !important;
+        height:8px !important;
+    }
 }
 
 .section-tag{
@@ -303,30 +472,6 @@ body{
     }
 }
 
-/* Mobile */
-@media(max-width:768px){
-
-    .hero-section .carousel-item{
-        height:80vh;
-    }
-
-    .hero-content{
-        padding:25px;
-    }
-
-    .hero-content h1{
-        font-size:2rem;
-    }
-
-    .hero-content p{
-        font-size:1rem;
-    }
-
-    .carousel-caption{
-        left:5%;
-        right:5%;
-    }
-}
 
 
 
@@ -392,34 +537,7 @@ body{
         margin-top:10px;
     }
 
-    .hero-content{
-        max-width:100%;
-        padding:20px;
-        border-radius:16px;
-    }
-
-    .hero-badge{
-        padding:6px 14px;
-        font-size:.9rem;
-    }
-
-    .hero-buttons a{
-        padding:10px 18px;
-        font-size:.95rem;
-    }
-
-    .hero-section .carousel-item{
-        height:55vh;
-        min-height:400px;
-    }
-
-    .hero-content h1{
-        font-size:1.7rem;
-    }
-
-    .hero-content p{
-        font-size:0.9rem;
-    }
+   
 
     .about-section{
         text-align:center;
@@ -1145,3 +1263,4 @@ body{
         padding:12px 14px;
     }
 }
+

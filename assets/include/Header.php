@@ -15,6 +15,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -22,11 +25,12 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 <link rel="stylesheet" href="assets/css/index.css">
 <link rel="stylesheet" href="assets/css/about.css">
 <link rel="stylesheet" href="assets/css/contact.css">
-<link rel="stylesheet" href="assets/css/notice.css">
 <link rel="stylesheet" href="assets/css/faculty.css">
 <link rel="stylesheet" href="assets/css/founder.css">
 <link rel="stylesheet" href="assets/css/principalmsg.css">
 <link rel="stylesheet" href="assets/css/parentsmeet.css">
+<link rel="stylesheet" href="assets/css/rules.css">
+<link rel="stylesheet" href="assets/css/noticeboard.css">
 </head>
 
 <body>
@@ -64,7 +68,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
 </a>
 
-      <button class="navbar-toggler custom-toggler"
+     <button class="navbar-toggler custom-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarContent"
@@ -105,9 +109,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                         </li>
                     </ul>
                 </li>
-                 <li class="nav-item">
-                    <a class="nav-link active" href="contactus.html">Contact Us</a>
-                </li>
+                
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle"
@@ -134,6 +136,20 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                         <li><a class="dropdown-item" href="#">Sports</a></li>
                         <li><a class="dropdown-item" href="#">Occasions</a></li>
                         <li><a class="dropdown-item" href="parentsmeet.php">Parent Teacher Meet</a></li>
+                        <li><a class="dropdown-item" href="rules.php">Rules & Regulations</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       data-bs-toggle="dropdown">
+                        Gallery
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">Photos</a></li>
+                        <li><a class="dropdown-item" href="">Video</a></li>                       
                     </ul>
                 </li>
 
@@ -145,9 +161,31 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                     <a class="nav-link" href="#">Blog</a>
                 </li>
 
+                
+
+                 <li class="nav-item">
+                    <a class="nav-link active" href="contactus.html">Contact Us</a>
+                </li>
+
             </ul>
 
         </div>
     </div>
 </nav>
 
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const toggler = document.querySelector(".custom-toggler");
+    const menu = document.getElementById("navbarContent");
+
+    menu.addEventListener("show.bs.collapse", function(){
+        toggler.classList.add("active");
+    });
+
+    menu.addEventListener("hide.bs.collapse", function(){
+        toggler.classList.remove("active");
+    });
+
+});
+</script>

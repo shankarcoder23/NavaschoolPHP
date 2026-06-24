@@ -2,43 +2,19 @@
 
 <main>
 
-    <!-- Hero Section -->
 <section class="about-hero">
+
+    <img src="assets/image/Faculty-page/teacher-group (1).jpg"
+         alt="About School"
+         class="hero-bg">
+
     <div class="container">
-
-        <div class="row align-items-center">
-
-            <div class="col-lg-6">
-                <div class="hero-content">
-
-                    <span class="badge bg-light text-primary px-3 py-2 mb-3">
-                        About Our School
-                    </span>
-
-                    <h1 class="fw-bold text-white">
-                        Empowering Minds,
-                        Building Futures
-                    </h1>
-
-                    <p class="lead text-white mt-3">
-                        Providing quality education, character development,
-                        and lifelong learning opportunities for every student.
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="col-lg-6 text-center">
-
-                <img src="assets/image/about/Interior of a classroom with natural light AI generated.jpg"
-                     alt="School Illustration"
-                     class="hero-image">
-
-            </div>
-
+        <div class="hero-content">
+            <h1>About Our School</h1>
+            <p>Empowering Minds, Building Futures Through Quality Education</p>
         </div>
-
     </div>
+
 </section>
 
    <!-- About School -->

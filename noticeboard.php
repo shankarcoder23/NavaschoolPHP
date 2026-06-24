@@ -1,131 +1,117 @@
-<?php include 'assets/include/Header.php'; ?>
+<?php include 'assets/include/Header.php' ?>
 
-<!-- ================= NOTICE BOARD SECTION START ================= -->
-<section class="notice-board">
+<!-- Notice Board Section -->
+<section class="notice-board-section py-5">
+    <div class="container">
 
-  <!-- 🔴 LIVE TICKER -->
-  <div class="notice-ticker">
-    <div class="ticker-title">Breaking News</div>
-    <div class="ticker-wrap">
-      <div class="ticker" id="tickerText">
-        Admission Open for 2026-27 • Half-Yearly Exam from 10 July • School Closed on 25 June for Festival
-      </div>
+        <!-- Section Heading -->
+        <div class="section-title text-center mb-5">
+            <span class="subtitle">Latest Updates</span>
+            <h2>School Notice Board</h2>
+            <p>Stay updated with important announcements, examinations, holidays and events.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Notice Card -->
+            <div class="col-lg-6">
+                <div class="notice-card">
+                    <div class="notice-header">
+                        <span class="notice-badge exam">Exam</span>
+                        <span class="notice-date">
+                            <i class="bi bi-calendar-event"></i>
+                            24 June 2026
+                        </span>
+                    </div>
+
+                    <h4>Half-Yearly Examination Schedule Published</h4>
+
+                    <p>
+                        The Half-Yearly Examination for Classes V to XII will commence from
+                        15th July 2026. Students are advised to download the examination routine.
+                    </p>
+
+                    <a href="#" class="notice-btn">
+                        Download Notice
+                    </a>
+                </div>
+            </div>
+
+            <!-- Notice Card -->
+            <div class="col-lg-6">
+                <div class="notice-card">
+                    <div class="notice-header">
+                        <span class="notice-badge holiday">Holiday</span>
+                        <span class="notice-date">
+                            <i class="bi bi-calendar-event"></i>
+                            22 June 2026
+                        </span>
+                    </div>
+
+                    <h4>Summer Vacation Announcement</h4>
+
+                    <p>
+                        The school will remain closed from 1st July to 10th July due to Summer Vacation.
+                        Regular classes will resume on 11th July.
+                    </p>
+
+                    <a href="#" class="notice-btn">
+                        Read More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Notice Card -->
+            <div class="col-lg-6">
+                <div class="notice-card">
+                    <div class="notice-header">
+                        <span class="notice-badge event">Event</span>
+                        <span class="notice-date">
+                            <i class="bi bi-calendar-event"></i>
+                            20 June 2026
+                        </span>
+                    </div>
+
+                    <h4>Annual Cultural Programme Registration Open</h4>
+
+                    <p>
+                        Interested students can register their names for dance, singing,
+                        drama and art competitions before 30th June.
+                    </p>
+
+                    <a href="#" class="notice-btn">
+                        Register Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Notice Card -->
+            <div class="col-lg-6">
+                <div class="notice-card">
+                    <div class="notice-header">
+                        <span class="notice-badge important">Important</span>
+                        <span class="notice-date">
+                            <i class="bi bi-calendar-event"></i>
+                            18 June 2026
+                        </span>
+                    </div>
+
+                    <h4>Parent-Teacher Meeting Notice</h4>
+
+                    <p>
+                        A Parent-Teacher Meeting (PTM) has been scheduled on 28th June 2026.
+                        Attendance of parents is highly encouraged.
+                    </p>
+
+                    <a href="#" class="notice-btn">
+                        View Details
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-  </div>
-
-  <div class="notice-wrapper">
-
-    <!-- HEADER -->
-    <div class="notice-top">
-      <h2>Notice Board</h2>
-
-      <!-- FILTER -->
-      <div class="filter-buttons">
-        <button class="active" onclick="filterNotice('all')">All</button>
-        <button onclick="filterNotice('Exam')">Exam</button>
-        <button onclick="filterNotice('Holiday')">Holiday</button>
-        <button onclick="filterNotice('Event')">Event</button>
-        <button onclick="filterNotice('Admission')">Admission</button>
-      </div>
-    </div>
-
-    <!-- NOTICE LIST -->
-    <div class="notice-grid">
-
-      <!-- NOTICE CARD -->
-      <div class="notice-card" data-category="Exam" data-date="2026-07-10">
-        <div class="tag exam">Exam</div>
-        <div class="content">
-          <h3>Half-Yearly Exam Schedule</h3>
-          <p>Exams will start from 10 July 2026 for all classes.</p>
-          <span>23 June 2026</span>
-        </div>
-      </div>
-
-      <div class="notice-card" data-category="Holiday" data-date="2026-06-25">
-        <div class="tag holiday">Holiday</div>
-        <div class="content">
-          <h3>School Holiday Notice</h3>
-          <p>School will remain closed due to local festival.</p>
-          <span>22 June 2026</span>
-        </div>
-      </div>
-
-      <div class="notice-card" data-category="Admission" data-date="2026-08-01">
-        <div class="tag admission">Admission</div>
-        <div class="content">
-          <h3>Admission Open 2026-27</h3>
-          <p>New admissions are open for all classes.</p>
-          <span>20 June 2026</span>
-        </div>
-      </div>
-
-      <div class="notice-card" data-category="Event" data-date="2026-07-05">
-        <div class="tag event">Event</div>
-        <div class="content">
-          <h3>Annual Sports Day</h3>
-          <p>Annual sports event will be conducted in July.</p>
-          <span>18 June 2026</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
 </section>
-<!-- ================= NOTICE BOARD SECTION END ================= -->
 
-<script>
-a
-// ================= FILTER =================
-function filterNotice(category){
-  let cards = document.querySelectorAll(".notice-card");
-  let buttons = document.querySelectorAll(".filter-buttons button");
-
-  buttons.forEach(btn => btn.classList.remove("active"));
-  event.target.classList.add("active");
-
-  cards.forEach(card => {
-    if(category === "all" || card.dataset.category === category){
-      card.style.display = "flex";
-    }else{
-      card.style.display = "none";
-    }
-  });
-}
-
-// ================= AUTO EXPIRY =================
-function checkExpiry(){
-  let today = new Date();
-
-  document.querySelectorAll(".notice-card").forEach(card => {
-    let expiryDate = new Date(card.dataset.date);
-
-    if(expiryDate < today){
-      card.style.opacity = "0.4";
-      card.style.pointerEvents = "none";
-    }
-  });
-}
-
-checkExpiry();
-
-// ================= OPTIONAL: TICKER UPDATE =================
-let ticker = document.getElementById("tickerText");
-let messages = [
-  "Admission Open for 2026-27",
-  "Half-Yearly Exam from 10 July",
-  "School Closed on 25 June",
-  "Annual Sports Day Coming Soon"
-];
-
-let i = 0;
-setInterval(() => {
-  ticker.innerText = messages[i];
-  i = (i + 1) % messages.length;
-}, 5000);
-
-</script>
-
-
-<?php include 'assets/include/Footer.php'; ?>
+<?php include 'assets/include/Footer.php' ?>
